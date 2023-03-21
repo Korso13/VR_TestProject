@@ -63,6 +63,17 @@
 					}
 				},
 				{
+					"mode": "button",
+					"path": "/user/hand/left/input/y",
+					"inputs":
+					{
+						"click":
+						{
+							"output": "/actions/main/in/LeftOculusControllerY"
+						}
+					}
+				},
+				{
 					"mode": "joystick",
 					"path": "/user/hand/left/input/joystick",
 					"inputs":
@@ -173,5 +184,5 @@
 			]
 		}
 	},
-	"description": ""
+	"description": "VR_Test-18319896"
 }
