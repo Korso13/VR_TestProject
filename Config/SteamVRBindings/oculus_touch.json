@@ -30,6 +30,54 @@
 					}
 				},
 				{
+					"mode": "button",
+					"path": "/user/hand/left/input/y",
+					"inputs":
+					{
+						"click":
+						{
+							"output": "/actions/main/in/LeftOculusControllerY"
+						}
+					}
+				},
+				{
+					"mode": "button",
+					"path": "/user/hand/left/input/application_menu",
+					"inputs":
+					{
+						"click":
+						{
+							"output": "/actions/main/in/MenuToggleLeft"
+						}
+					}
+				},
+				{
+					"mode": "dpad",
+					"path": "/user/hand/right/input/joystick",
+					"parameters":
+					{
+						"sub_mode": "touch"
+					},
+					"inputs":
+					{
+						"north":
+						{
+							"output": "/actions/main/in/TeleportRightController"
+						}
+					}
+				},
+				{
+					"mode": "button",
+					"path": "/user/hand/right/input/b",
+					"inputs":
+					{
+						"click":
+						{
+							"output": "/actions/main/in/TeleportRightController"
+						}
+					}
+				},
+				{
 					"mode": "trigger",
 					"path": "/user/hand/left/input/trigger",
 					"inputs":
@@ -52,39 +100,6 @@
 					}
 				},
 				{
-					"mode": "button",
-					"path": "/user/hand/left/input/application_menu",
-					"inputs":
-					{
-						"click":
-						{
-							"output": "/actions/main/in/MenuToggleLeft"
-						}
-					}
-				},
-				{
-					"mode": "button",
-					"path": "/user/hand/left/input/y",
-					"inputs":
-					{
-						"click":
-						{
-							"output": "/actions/main/in/LeftOculusControllerY"
-						}
-					}
-				},
-				{
-					"mode": "joystick",
-					"path": "/user/hand/left/input/joystick",
-					"inputs":
-					{
-						"position":
-						{
-							"output": "/actions/main/in/MovementAxisLeft_X,MovementAxisLeft_Y X Y_axis2d"
-						}
-					}
-				},
-				{
 					"mode": "trigger",
 					"path": "/user/hand/left/input/grip",
 					"inputs":
@@ -97,34 +112,23 @@
 				},
 				{
 					"mode": "trigger",
-					"path": "/user/hand/left/input/trigger",
-					"inputs":
-					{
-						"pull":
-						{
-							"output": "/actions/main/in/TriggerAxisLeft axis"
-						}
-					}
-				},
-				{
-					"mode": "trigger",
-					"path": "/user/hand/right/input/trigger",
-					"inputs":
-					{
-						"pull":
-						{
-							"output": "/actions/main/in/TriggerAxisRight axis"
-						}
-					}
-				},
-				{
-					"mode": "trigger",
 					"path": "/user/hand/right/input/grip",
 					"inputs":
 					{
 						"pull":
 						{
 							"output": "/actions/main/in/GrabAxisRight axis"
+						}
+					}
+				},
+				{
+					"mode": "joystick",
+					"path": "/user/hand/left/input/joystick",
+					"inputs":
+					{
+						"position":
+						{
+							"output": "/actions/main/in/MovementAxisLeft_X,MovementAxisLeft_Y X Y_axis2d"
 						}
 					}
 				},
@@ -147,6 +151,28 @@
 						"pull":
 						{
 							"output": "/actions/main/in/MovementAxisRight_Y axis"
+						}
+					}
+				},
+				{
+					"mode": "trigger",
+					"path": "/user/hand/left/input/trigger",
+					"inputs":
+					{
+						"pull":
+						{
+							"output": "/actions/main/in/TriggerAxisLeft axis"
+						}
+					}
+				},
+				{
+					"mode": "trigger",
+					"path": "/user/hand/right/input/trigger",
+					"inputs":
+					{
+						"pull":
+						{
+							"output": "/actions/main/in/TriggerAxisRight axis"
 						}
 					}
 				}

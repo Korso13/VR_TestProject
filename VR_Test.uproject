@@ -49,10 +49,6 @@
 				"Win64",
 				"Android"
 			]
-		},
-		{
-			"Name": "ScooterUtils",
-			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [

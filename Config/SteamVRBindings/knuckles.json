@@ -52,6 +52,28 @@
 					}
 				},
 				{
+					"mode": "force_sensor",
+					"path": "/user/hand/left/input/grip",
+					"inputs":
+					{
+						"force":
+						{
+							"output": "/actions/main/in/GrabAxisLeft axis"
+						}
+					}
+				},
+				{
+					"mode": "force_sensor",
+					"path": "/user/hand/right/input/grip",
+					"inputs":
+					{
+						"force":
+						{
+							"output": "/actions/main/in/GrabAxisRight axis"
+						}
+					}
+				},
+				{
 					"mode": "joystick",
 					"path": "/user/hand/left/input/thumbstick",
 					"inputs":
@@ -63,13 +85,13 @@
 					}
 				},
 				{
-					"mode": "force_sensor",
-					"path": "/user/hand/left/input/grip",
+					"mode": "joystick",
+					"path": "/user/hand/right/input/thumbstick",
 					"inputs":
 					{
-						"force":
+						"position":
 						{
-							"output": "/actions/main/in/GrabAxisLeft axis"
+							"output": "/actions/main/in/MovementAxisRight_X,MovementAxisRight_Y X Y_axis2d"
 						}
 					}
 				},
@@ -92,28 +114,6 @@
 						"pull":
 						{
 							"output": "/actions/main/in/TriggerAxisRight axis"
-						}
-					}
-				},
-				{
-					"mode": "force_sensor",
-					"path": "/user/hand/right/input/grip",
-					"inputs":
-					{
-						"force":
-						{
-							"output": "/actions/main/in/GrabAxisRight axis"
-						}
-					}
-				},
-				{
-					"mode": "joystick",
-					"path": "/user/hand/right/input/thumbstick",
-					"inputs":
-					{
-						"position":
-						{
-							"output": "/actions/main/in/MovementAxisRight_X,MovementAxisRight_Y X Y_axis2d"
 						}
 					}
 				}
